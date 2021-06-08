@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+
+    <link href="./assets/styles/style.css" type="text/css" rel="stylesheet" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div>
+        <ul id="listElement" class="list-group shadow-sm">
+          <li class="list-group-item">
+            An item
+            <div class="custom-control custom-checkbox d-inline">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="customCheck1"
+              />
+            </div>
+          </li>
+          <li class="list-group-item">
+            A second item
+            <div class="custom-control custom-checkbox d-inline">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="customCheck1"
+              />
+            </div>
+          </li>
+        </ul>
+        <div class="form-group mt-3">
+          <label>Type below to create a new task</label>
+          <input id="addToDoInput" class="form-control" type="text" />
+
+          <button id="addToDoBtn" type="submit" class="btn btn-primary mt-3">
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- O escopo dos arquivos carregados na tag script de cima fica disponível pras tags script de baixo -->
+    <script src="./assets/scripts/classes.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+  </body>
+</html>
